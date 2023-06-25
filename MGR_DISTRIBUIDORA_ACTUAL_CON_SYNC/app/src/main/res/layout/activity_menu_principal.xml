@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Actividades.MenuPrincipal">
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#212121"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView122"
+            style="@style/Widget.AppCompat.Toolbar.Button.Navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/roboto_black"
+            android:gravity="center"
+            android:text="MGR DISTRIBUIDORA"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="match_parent"
+            android:layout_height="82dp"
+            android:layout_weight="1"
+            android:background="#D3212121"
+            android:paddingTop="3dp"
+            android:paddingBottom="2dp"
+            android:src="@drawable/dd"
+            android:visibility="gone" />
+
+        <View
+            android:id="@+id/divider16"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#212121" />
+
+        <TextView
+            android:id="@+id/id_bienvenido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#D3212121"
+            android:fontFamily="@font/roboto"
+            android:gravity="center|left"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="10dp"
+            android:text="Bienvenido:"
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="@color/white"
+            android:textSize="14sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/id_vendedor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/id_idvendedor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="10dp"
+        android:paddingStart="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout26"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout6">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/divider60"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="?android:attr/listDivider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/divider63"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0"
+                    android:background="?android:attr/listDivider" />
+
+                <Button
+                    android:id="@+id/btnVender"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/vender96"
+                    android:drawablePadding="5dp"
+                    android:fontFamily="@font/roboto_bold"
+                    android:onClick="irVenta"
+                    android:text="VENDER"
+                    android:textColor="#212121" />
+
+                <View
+                    android:id="@+id/divider39"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0"
+                    android:background="@color/white"
+                    android:visibility="invisible" />
+
+                <Button
+                    android:id="@+id/btnListarVentas"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/ventas96"
+                    android:drawablePadding="5dp"
+                    android:fontFamily="@font/roboto_bold"
+                    android:onClick="irListarVentas"
+                    android:padding="5dp"
+                    android:paddingStart="5dp"
+                    android:paddingTop="5dp"
+                    android:paddingEnd="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="VENTAS REALIZADAS"
+                    android:textColor="#212121" />
+
+                <View
+                    android:id="@+id/divider64"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0"
+                    android:background="?android:attr/listDivider" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider69"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="?android:attr/listDivider" />
+
+            <View
+                android:id="@+id/divider40"
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <View
+                android:id="@+id/divider68"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="?android:attr/listDivider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/divider65"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0"
+                    android:background="?android:attr/listDivider" />
+
+                <Button
+                    android:id="@+id/btnProducto"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/product96"
+                    android:drawablePadding="5dp"
+                    android:fontFamily="@font/roboto_bold"
+                    android:onClick="irProductos"
+                    android:padding="5dp"
+                    android:paddingStart="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="5dp"
+                    android:paddingEnd="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="PRODUCTOS"
+                    android:textColor="#212121" />
+
+                <View
+                    android:id="@+id/divider66"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0"
+                    android:background="?android:attr/listDivider"
+                    android:visibility="invisible" />
+
+                <Button
+                    android:id="@+id/id_btnClient"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/clientes64"
+                    android:drawablePadding="5dp"
+                    android:fontFamily="@font/roboto_bold"
+                    android:onClick="irClientes"
+                    android:padding="5dp"
+                    android:paddingStart="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="5dp"
+                    android:paddingEnd="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="CLIENTES"
+                    android:textColor="#212121" />
+
+                <View
+                    android:id="@+id/divider67"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0"
+                    android:background="?android:attr/listDivider" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider41"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <View
+                android:id="@+id/divider73"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_weight="1" />
+
+            <View
+                android:id="@+id/divider42"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/divider70"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0"
+                    android:background="?android:attr/listDivider" />
+
+                <Button
+                    android:id="@+id/id_btnMant"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/settings96"
+                    android:drawablePadding="5dp"
+                    android:fontFamily="@font/roboto_bold"
+                    android:onClick="irOpcionesMantenimieto"
+                    android:padding="5dp"
+                    android:paddingStart="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="5dp"
+                    android:paddingEnd="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="MANTENIMIENTOS"
+                    android:textColor="#212121" />
+
+                <View
+                    android:id="@+id/divider71"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0"
+                    android:background="?android:attr/listDivider" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider43"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <View
+                android:id="@+id/divider75"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout26"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#212121"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <View
+            android:id="@+id/divider13"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+
+        <Button
+            android:id="@+id/id_btnCS"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_salir"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/roboto_black"
+            android:gravity="center"
+            android:onClick="CerrarSesion"
+            android:text="@string/btnIrInicio"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <View
+            android:id="@+id/divider78"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#191919" />
+
+        <TextView
+            android:id="@+id/textView120"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:gravity="center"
+            android:text="@string/version"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
